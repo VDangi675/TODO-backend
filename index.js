@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express")
 const app = express();
 
-mongoose.connect("mongodb://0.0.0.0:27017/list").then(()=>console.log("Connected to db"))
+mongoose.connect("mongodb+srv://vikasdangi:vikasdangi@cluster0.fl6mzbu.mongodb.net/?retryWrites=true&w=majority").then(()=>console.log("Connected to db"))
 
 if(process.env.NODE_ENV !=="production"){
     require("dotenv").config({path:"config.env"})
