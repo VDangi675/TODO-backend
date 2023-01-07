@@ -29,7 +29,7 @@ router.post("/list",isAuthenticated, async(req,res)=>{
     try{
 
  
-   let  list = await Todo.create({...req.body})
+   let  list = await Todo.create(req.body)
 
     res.json({list,message:"list item"})
 
